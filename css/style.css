@@ -532,8 +532,8 @@ input::placeholder {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: z wartością 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
@@ -621,7 +621,7 @@ input::placeholder {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-svg:focus {
+.user-name:focus-within .contacts-svg {
   fill: #4d5ae5;
 }
 .user-comment {
@@ -692,5 +692,7 @@ input::placeholder {
   color: #ffffff;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  justify-content: center;
+  margin-bottom: 24px;
+  margin-left: calc((100% - 169px) / 2);
+  margin-right: calc((100% - 169px) / 2);
 }
