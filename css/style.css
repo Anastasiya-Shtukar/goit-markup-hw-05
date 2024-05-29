@@ -624,6 +624,9 @@ input::placeholder {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts-svg:focus {
+  fill: #4d5ae5;
+}
 
 .user-comment {
   width: 100%;
@@ -673,7 +676,7 @@ input::placeholder {
 .icon-click-span:focus-within {
   fill: #f4f4fd;
 }
-.user-privacy .visually-hidden:checked + .user-privacy-label .icon-click-span {
+.user-privacy:checked + .user-privacy-label .icon-click-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
