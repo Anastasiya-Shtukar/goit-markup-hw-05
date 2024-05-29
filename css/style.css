@@ -604,6 +604,11 @@ input::placeholder {
 .form-contacts-edit-box:focus-within {
   fill: #4d5ae5;
 }
+
+.form-contacts-label:focus-within .form-contacts-edit-box {
+  fill: #4d5ae5;
+}
+
 .user-name {
   width: 100%;
   height: 40px;
